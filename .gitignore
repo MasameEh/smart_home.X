@@ -1,5 +1,5 @@
-.generated_files/
-build/
-dist/
+.generated_files/flags/default/
+build/default/production/
+dist/default/production/
 nbproject/
 .vscode/
