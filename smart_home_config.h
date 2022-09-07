@@ -11,7 +11,7 @@
 #include "MCAL\DIO\dio.h"
 
 #define LDR_PORT DIO_PORTA
-#define LRD_PIN DIO_PIN0
+#define LDR_PIN DIO_PIN0
 #define LED_PORT DIO_PORTB
 #define LED_PIN DIO_PIN0
 
