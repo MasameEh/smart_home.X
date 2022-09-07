@@ -2,7 +2,8 @@
 #include <util/delay.h>
 
 #include "smart_home_config.h"
-#include "E:\AVR_Drivers\MCAL\ADC\adc.h"
+#include "MCAL\ADC\adc.h"
+#include "MCAL\DIO\dio.h"
 
 #define ADC_STEP (5.0/1024.0)
 
