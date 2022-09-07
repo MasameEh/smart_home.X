@@ -8,7 +8,7 @@
 #ifndef SMART_HOME_CONFIG_H
 #define	SMART_HOME_CONFIG_H
 
-#include "E:\AVR_Drivers\MCAL\DIO\dio.h"
+#include "MCAL\DIO\dio.h"
 
 #define LDR_PORT DIO_PORTA
 #define LRD_PIN DIO_PIN0
