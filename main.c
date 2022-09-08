@@ -1,9 +1,9 @@
 #define F_CPU 8000000UL
 #include <util/delay.h>
-
 #include "smart_home_config.h"
 #include "MCAL\ADC\adc.h"
 #include "MCAL\DIO\dio.h"
+#include "MCAL\TIMER\timer.h"
 
 #define ADC_STEP (5.0/1024.0)
 
