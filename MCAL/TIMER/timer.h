@@ -1,3 +1,11 @@
+/*
+ * timer.h
+ *
+ * Created: 08/09/2022 04:58:42
+ *  Author: M-aa2
+ */ 
+
+
 #ifndef TIMER_H_
 #define TIMER_H_
 
@@ -7,44 +15,45 @@
 //OOP
 
 typedef enum{
-    TIMER0,
-    TIMER1,
-    TIMER2,
+	TIMER0,
+	TIMER1,
+	TIMER2,
 }timer_t;
 
 
 typedef enum{
-    NORMAL = 0,
-    PWM,
-    CTC,
-    FAST_PWM
+	NORMAL = 0,
+	PWM,
+	CTC,
+	FAST_PWM
 }timer_output_t;
 
 typedef enum{
-    TIMER_NO_CLKSRC,
-    TIMER_PRESC_1,
-    TIMER_PRESC_8,
-    TIMER_PRESC_64,
-    TIMER_PRESC_256,
-    TIMER_PRESC_1024,
-    TIMER_EXTCLK_RISING,
-    TIMER_EXTCLK_FALLING,
+	TIMER_NO_CLKSRC,
+	TIMER_PRESC_1,
+	TIMER_PRESC_8,
+	TIMER_PRESC_64,
+	TIMER_PRESC_256,
+	TIMER_PRESC_1024,
+	TIMER_EXTCLK_RISING,
+	TIMER_EXTCLK_FALLING,
 }timer_clksrc_t;
 
 typedef enum{
-    CTC_PIN_DISCONNECTED,
-    CTC_PIN_TOGGLE,
-    CTC_PIN_CLR,
-    CTC_PIN_SET,
+	CTC_PIN_DISCONNECTED,
+	CTC_PIN_TOGGLE,
+	CTC_PIN_CLR,
+	CTC_PIN_SET,
 }ctc_outmode_t;
 
 
-typdef struct
+typedef struct timer_config_t
 {
-    //timer_mode_t mode;
-    timer_output_t output_mode;
-    timer_clksrc_t  clksrc;
-    uint8_t int_state;   // 0 / 1
+	//timer_mode_t mode;
+	timer_output_t output_mode;
+	timer_clksrc_t  clksrc;
+	ctc_outmode_t ctc_mode;
+	uint8_t int_state;   // 0 / 1
 }timer_config_t;
 
 void timer_init(timer_t timer, timer_config_t config);
@@ -56,4 +65,4 @@ uint16_t timer_get_counter();
 
 uint8_t timer_is_overflow(timer_t timer);
 
-#endif
+#endif /* TIMER_H_ */
