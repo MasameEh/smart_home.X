@@ -12,9 +12,11 @@ void main()
     
     dio_set_direction(LDR_PORT, LRD_PIN, DIO_DIRECTION_INPUT);
     dio_set_direction(LED_PORT, LED_PIN, DIO_DIRECTION_OUTPUT);
+    dio_set_direction(LM35_PORT, LM35_PIN, DIO_DIRECTION_INPUT);
+    dio_set_direction(FAN_PORT, FAN_PIN, DIO_DIRECTION_OUTPUT);
     adc_init();
     adc_select_channel(0);
-    
+        
     while (1)
     {
       
