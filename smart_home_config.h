@@ -12,8 +12,15 @@
 
 #define LDR_PORT DIO_PORTA
 #define LDR_PIN DIO_PIN0
+
 #define LED_PORT DIO_PORTB
 #define LED_PIN DIO_PIN0
+
+#define LM35_PORT DIO_PORTA
+#define LM35_PIN DIO_PIN1
+
+#define FAN_PORT DIO_PORTB
+#define FAN_PIN DIO_PIN3
 
 #endif	/* SMART_HOME_CONFIG_H */
 
