@@ -4,8 +4,8 @@
  *      Author: Mohamed Sameh
  */
 
-#ifndef MCAL_DIO_DIO_H_
-#define MCAL_DIO_DIO_H_
+#ifndef DIO_H_
+#define DIO_H_
 
 typedef enum
 {
@@ -44,4 +44,4 @@ void dio_set_level(dio_t port, dio_pin_t pin, dio_level_t value);
 void dio_set_port_level(dio_t port, dio_level_t value);
 dio_level_t dio_get_level(dio_t port, dio_pin_t pin);
 
-#endif /* MCAL_DIO_DIO_H_ */
+#endif /* DIO_H_ */
